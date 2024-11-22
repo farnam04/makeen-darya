@@ -20,7 +20,7 @@ const Navbar = () => {
                          ? " text-[#363636] border-b-2 border-[#1235AA] pb-[4px]  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
                          : "text-[#6B6B6B] w-[63px]"
                      }
-                     hover:w-[90px] hover:text-[#363636] hover:text-base duration-300`}
+                      hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[5px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
                 >
                   صفحه اصلی
                 </span>
@@ -30,50 +30,50 @@ const Navbar = () => {
             <Link href="/product">
               <button className="cursor-pointer">
               <span
-                  style={pathName === "/product" ? { color: "#363636" } : {}}
-                  className={`w-20 font-demiBold text-base whitespace-nowrap 
-                 ${
-                       pathName === "/product"
-                         ? " text-[#363636] border-b-2 border-[#1235AA] pb-[4px]  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
-                         : "text-[#6B6B6B] w-[63px]"
-                     }
-                     hover:w-[90px] hover:text-[#363636] hover:text-base duration-300`}
-                >
-                  محصولات ما
+                   style={pathName === "/product" ? { color: "#363636" } : {}}
+                   className={`w-20 font-demiBold text-base whitespace-nowrap 
+                  ${
+                        pathName === "/product"
+                          ? " text-[#363636] border-b-2 border-[#1235AA] pb-[4px]  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
+                          : "text-[#6B6B6B] w-[63px]"
+                      }
+                       hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[4px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
+                 >
+                محصولات
                 </span>
               </button>
             </Link>
 
-            <Link href="/brand">
+            <Link href="/brands">
               <button className="cursor-pointer">
                 <p
-                  style={pathName === "/brand" ? { color: "2E8B57" } : {}}
-                  className={`w-20 font-demiBold text-base whitespace-nowrap 
-                     ${
-                       pathName === "/brand"
-                         ? " text-[#2E8B57] pb-[2px] w-[90px] text-lg mt-[1px] leading-7 font-bold duration-300"
-                         : "text-[#727272]"
-                     }
-                     hover:w-[90px] hover:text-[#2E8B57]   hover:text-lg duration-300`}
-                >
-                  برند ما
+               style={pathName === "/brands" ? { color: "#363636" } : {}}
+               className={`w-20 font-demiBold text-base whitespace-nowrap 
+              ${
+                    pathName === "/brands"
+                      ? " text-[#363636] border-b-2 border-[#1235AA] pb-[10px] pt-2  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
+                      : "text-[#6B6B6B] w-[63px]"
+                  }
+                   hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[15.7px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
+             >
+                برند ها
                 </p>
               </button>
             </Link>
 
-            <Link href="/mountaineeringmagazine">
+            <Link href="/blog">
               <button className="cursor-pointer">
                 <p
-                  style={pathName === "/mountaineeringmagazine" ? { color: "2E8B57" } : {}}
-                  className={`w-20 font-demiBold text-base whitespace-nowrap 
-                     ${
-                       pathName === "/mountaineeringmagazine"
-                         ? " text-[#2E8B57] pb-[2px] w-[90px] text-lg mt-[1px] leading-7 font-bold duration-300"
-                         : "text-[#727272]"
-                     }
-                     hover:w-[90px] hover:text-[#2E8B57]   hover:text-lg duration-300`}
-                >
-                  مجله کوهنوردی
+               style={pathName === "/blog" ? { color: "#363636" } : {}}
+               className={`w-20 font-demiBold text-base whitespace-nowrap 
+              ${
+                    pathName === "/blog"
+                      ? " text-[#363636] border-b-2 border-[#1235AA] pb-[10px] pt-2  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
+                      : "text-[#6B6B6B] w-[63px]"
+                  }
+                   hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[14.5px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
+             >
+                بلاگ ها
                 </p>
               </button>
             </Link>
@@ -81,16 +81,34 @@ const Navbar = () => {
             <Link href="/aboutus">
               <button className="cursor-pointer">
                 <p
-                  style={pathName === "/aboutus" ? { color: "2E8B57" } : {}}
-                  className={`w-20 font-demiBold text-base whitespace-nowrap 
-                     ${
-                       pathName === "/aboutus"
-                         ? " text-[#363636] border-2 border-[#1235AA] pb-[2px] rounded-lg w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
-                         : "text-[#6B6B6B] w-[63px]"
-                     }
-                     hover:w-[90px] hover:text-[#363636] hover:rounded-lg  hover:text-base duration-300`}
-                >
-                  ارتباط با ما
+                style={pathName === "/aboutus" ? { color: "#363636" } : {}}
+                className={`w-20 font-demiBold text-base whitespace-nowrap 
+               ${
+                     pathName === "/aboutus"
+                       ? " text-[#363636] border-b-2 border-[#1235AA] pb-[10px] pt-2   w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
+                       : "text-[#6B6B6B] w-[63px]"
+                   }
+                    hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[14.5px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
+              >
+                 درباره ما
+                </p>
+              </button>
+            </Link>
+
+
+            <Link href="/contactus">
+              <button className="cursor-pointer">
+                <p
+                style={pathName === "/contactus" ? { color: "#363636" } : {}}
+                className={`w-20 font-demiBold text-base whitespace-nowrap 
+               ${
+                     pathName === "/contactus"
+                       ? " text-[#363636] border-b-2 border-[#1235AA] pb-[10px] pt-2   w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
+                       : "text-[#6B6B6B] w-[63px]"
+                   }
+                    hover:text-[#363636] hover:border-b-2 hover:border-[#1235AA] hover:pb-[14.5px] hover:pt-2  hover:font-bold  hover:w-[78px] hover:text-base duration-300`}
+              >
+              تماس با ما
                 </p>
               </button>
             </Link>
