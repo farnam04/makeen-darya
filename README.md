@@ -4,9 +4,9 @@
 
 
 
-![Logo](https://github.com/mahdihagollahi/Booking-a-beauty-clinic/blob/developer/src/assent/Img/Landing/GreenLogo.svg)
+![Logo](https://github.com/farnam04/makeen-darya/blob/developer/src/assent/Imge/Landing/Logo.svg)
 
-![Commit Badge](https://img.shields.io/github/commit-activity/y/mahdihagollahi/Booking-a-beauty-clinic)
+![Commit Badge](https://img.shields.io/github/commit-activity/y/farnam04/makeen-darya)
 
 <!-- - 💵 You will receive the amount quickly -->
   <!-- - 💳 The money is deposited in the account card -->
