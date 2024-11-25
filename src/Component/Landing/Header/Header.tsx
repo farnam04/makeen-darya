@@ -5,7 +5,7 @@ import loginButtonIcon from '@/assent/Imge/Landing/user.svg'
 const Header = () => {
   return (
     <Fragment>
-        <div className='flex justify-between px-20 py-4 pb-2 '>
+        <div className='flex bg-white justify-between px-20 py-4 pb-2 '>
            <div className='flex items-center gap-3'>
             <Image
             src={Logo}

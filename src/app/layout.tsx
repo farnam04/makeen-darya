@@ -15,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
-      <body className="font-Estedad">{children}</body>
+    <html lang="fa" dir="rtl"
+   
+    >
+      <body className="font-Estedad"
+       style={{ backgroundColor: '#f8f8f8' , }}
+      >{children}</body>
     </html>
   );
 }
