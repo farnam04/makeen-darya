@@ -7,7 +7,8 @@ const ProductData = () => {
         {
         id:1,
         src:ProductDataImage,
-        name: 'چادر دو نفره موبی گاردن',
+        name: "ماهی",
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -18,6 +19,7 @@ const ProductData = () => {
         id:2,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -28,6 +30,7 @@ const ProductData = () => {
         id:3,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -37,6 +40,7 @@ const ProductData = () => {
         id:4,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -46,6 +50,7 @@ const ProductData = () => {
         id:5,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -55,6 +60,7 @@ const ProductData = () => {
         id:6,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -64,6 +70,7 @@ const ProductData = () => {
         id:7,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -74,6 +81,7 @@ const ProductData = () => {
         id:8,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -83,6 +91,7 @@ const ProductData = () => {
         id:9,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -94,6 +103,7 @@ const ProductData = () => {
         id:10,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -105,6 +115,7 @@ const ProductData = () => {
         id:11,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -117,6 +128,7 @@ const ProductData = () => {
         id:12,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -129,6 +141,7 @@ const ProductData = () => {
         id:13,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -139,6 +152,7 @@ const ProductData = () => {
         id:14,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -150,6 +164,7 @@ const ProductData = () => {
         id:15,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -161,6 +176,7 @@ const ProductData = () => {
         id:16,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -172,6 +188,7 @@ const ProductData = () => {
         id:17,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
@@ -183,6 +200,7 @@ const ProductData = () => {
         id:18,
         src:ProductDataImage,
         name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
         model:'Light Riding',
         price: '9,449,000 '
     } , 
