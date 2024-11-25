@@ -6,7 +6,7 @@ const Navbar = () => {
     const pathName= usePathname()
   return (
     <Fragment>
-       <div className="relative bg-white z-10">
+       <div className="relative bg-white rounded-b-3xl z-10">
       <div className="flex px-4 md:px-20 py-6 items-center md:justify-between">
         <div className="flex justify-between items-center w-full ">
           <div className="hidden md:flex  gap-10 items-center">
