@@ -10,7 +10,6 @@ import ProductShow from "./ProductShow";
 
 const Product = () => {
   const Data = ProductData().Product;
-  const [filledHeart, setFilledHeart] = useState<Record<number, boolean>>({});
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 7;
 
@@ -22,12 +21,7 @@ const Product = () => {
     setCurrentPage(data.selected + 1);
   };
 
-  const handleHeartClick = (index: number) => {
-    setFilledHeart((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
-  };
+  
   return (
     <Fragment>
       <div className="mt-8 px-24">
@@ -60,11 +54,10 @@ const Product = () => {
         <div>
           <FilterData />
         </div>
-        <div className="grid grid-cols-3 mr-10 mt-10 gap-9 w-[80%]">
+        <div className="grid grid-cols-3 mr-10 mt-10 gap-9 w-[66%]">
           <ProductShow
             currentPageData={currentPageData}
-            filledHeart={filledHeart}
-            handleHeartClick={handleHeartClick}
+         
           />
         </div>
       </div>
