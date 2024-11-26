@@ -1,6 +1,6 @@
 "use client";
 import React, { Fragment, useState } from "react";
-import ProductData from "@/component/Product/ProductData";
+import ProductData from "@/Component/Products/Product/ProductData";
 
 import Link from "next/link";
 import FilterProduct from "./FilterProduct";
@@ -21,12 +21,11 @@ const Product = () => {
     setCurrentPage(data.selected + 1);
   };
 
-  
   return (
     <Fragment>
       <div className="mt-8 px-24">
         <p className="pb-6 text-base font-medium text-[#1D1D1D]">
-        محصولات لوازم ناوبری
+          محصولات لوازم ناوبری
         </p>
         <div className="breadcrumbs  text-base">
           <ul>
@@ -55,13 +54,10 @@ const Product = () => {
           <FilterData />
         </div>
         <div className="grid grid-cols-3 mr-10 mt-10 gap-9 w-[66%]">
-          <ProductShow
-            currentPageData={currentPageData}
-         
-          />
+          <ProductShow currentPageData={currentPageData} />
         </div>
       </div>
-      <div className="mt-10 px-40 w-[88%] mr-60  ">
+      <div className="mt-10  w-[67%] mr-[28%]  ">
         <Paginate
           currentPageData={currentPageData}
           pageCount={pageCount}

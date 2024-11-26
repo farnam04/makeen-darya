@@ -17,7 +17,7 @@ const FilterDropDown = () => {
 
   return (
     <Fragment>
-      <div className="relative   w-80 mr-10  mt-10">
+      <div className="relative   w-80 mr-5  mt-10">
         <div
           onClick={toggleDropdown}
           className="flex justify-between  items-center px-4 py-3 bg-white rounded-lg shadow cursor-pointer"
