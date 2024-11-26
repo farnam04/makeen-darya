@@ -11,7 +11,7 @@ import ProductShow from "./ProductShow";
 const Product = () => {
   const Data = ProductData().Product;
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 7;
+  const itemsPerPage = 9;
 
   const offset = (currentPage - 1) * itemsPerPage;
   const currentPageData = Data.slice(offset, offset + itemsPerPage);
@@ -61,7 +61,7 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="mt-10 flex justify-center">
+      <div className="mt-10 px-40 w-[88%] mr-60  ">
         <Paginate
           currentPageData={currentPageData}
           pageCount={pageCount}

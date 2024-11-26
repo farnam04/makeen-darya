@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl"
+    <html lang="fa" className="bg-[#f8f8f8]" dir="rtl"
    
     >
       <body className="font-Estedad"
