@@ -204,6 +204,24 @@ const ProductData = () => {
         model:'Light Riding',
         price: '9,449,000 '
     } , 
+
+    {
+        id:19,
+        src:ProductDataImage,
+        name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
+        model:'Light Riding',
+        price: '9,449,000 '
+    } , 
+
+    {
+        id:20,
+        src:ProductDataImage,
+        name: 'چادر دو نفره موبی گاردن',
+        brand: 'VIVID',
+        model:'Light Riding',
+        price: '9,449,000 '
+    } , 
 ],
   };
 };
