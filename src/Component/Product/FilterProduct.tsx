@@ -18,10 +18,10 @@ const FilterProduct = () => {
           </p>
           <div className="flex  gap-5 mr-12 cursor-pointer items-center">
             <p
-              className={`font-medium text-base duration-300 ${
+              className={`font-medium px-2 py-4 rounded-lg text-base duration-300 text-[#565656] ${
                 activeFilter === "جدید ترین"
-                  ? "text-[#2E8B57]"
-                  : "text-[#727272] hover:text-[#2E8B57]"
+                  ? "bg-[#E8EDFE]"
+                  : "text-[#565656] hover:bg-[#E8EDFE]"
               }`}
               onClick={() => handleFilterClick("جدید ترین")}
             >
@@ -29,39 +29,39 @@ const FilterProduct = () => {
             </p>
 
             <p
-               className={`font-medium text-base duration-300 ${
-                activeFilter === "محبوب ترین"
-                  ? "text-[#2E8B57]"
-                  : "text-[#727272] hover:text-[#2E8B57]"
-              }`}
+             className={`font-medium px-2 py-4  rounded-lg text-base duration-300 text-[#565656] ${
+              activeFilter === "محبوب ترین"
+                ? "bg-[#E8EDFE]"
+                : "text-[#565656] hover:bg-[#E8EDFE]"
+            }`}
               onClick={() => handleFilterClick("محبوب ترین")}
             >
              محبوب ترین
             </p>
 
-            <p  className={`font-medium text-base duration-300 ${
+            <p   className={`font-medium px-2 py-4  rounded-lg text-base duration-300 text-[#565656] ${
                 activeFilter === "پرفروش ترین"
-                  ? "text-[#2E8B57]"
-                  : "text-[#727272] hover:text-[#2E8B57]"
+                  ? "bg-[#E8EDFE]"
+                  : "text-[#565656] hover:bg-[#E8EDFE]"
               }`}
               onClick={() => handleFilterClick("پرفروش ترین")}>
              پرفروش ترین
             </p>
 
 
-            <p   className={`font-medium text-base duration-300 ${
+            <p   className={`font-medium px-2 py-4  rounded-lg text-base duration-300 text-[#565656] ${
                 activeFilter === "ارزان ترین"
-                  ? "text-[#2E8B57]"
-                  : "text-[#727272] hover:text-[#2E8B57]"
+                  ? "bg-[#E8EDFE]"
+                  : "text-[#565656] hover:bg-[#E8EDFE]"
               }`}
               onClick={() => handleFilterClick("ارزان ترین")}>
         ارزان ترین
             </p>
 
-            <p   className={`font-medium text-base duration-300 ${
-                activeFilter === "گران ترین"
-                  ? "text-[#2E8B57]"
-                  : "text-[#727272] hover:text-[#2E8B57]"
+            <p    className={`font-medium px-2 py-4  rounded-lg text-base duration-300 text-[#565656] ${
+                activeFilter ==="گران ترین"
+                  ? "bg-[#E8EDFE]"
+                  : "text-[#565656] hover:bg-[#E8EDFE]"
               }`}
               onClick={() => handleFilterClick("گران ترین")}>
              گران ترین
