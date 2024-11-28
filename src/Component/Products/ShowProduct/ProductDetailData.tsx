@@ -13,6 +13,8 @@ const ProductDetailData = () => {
         rate: "3.6",
         price: "9,449,000 ",
 
+         discription:"  STRIKER Vivid 7sv دارای 7 صفحه نمایش، روشن و قابل خواندن حتی در نورخورشید می باشدکه ماهی ها و ساختار را میتوانید باجزئیات فوق العاده نشان د.",
+         TechnicalSpecifications:"ابعاد فیزیکی: 5.8*14.0*23.5 سانتی متر",
         images: [Image, Image2, Image3, Image4],
       },
 
