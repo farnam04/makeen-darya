@@ -1,9 +1,13 @@
+"use client";
 import React, { Fragment } from "react";
 import Link from "next/link";
 import BrandData from "./BrandData";
 import Image from "next/image";
+
 const Brand = () => {
   const Data = BrandData().Brand;
+
+ 
   return (
     <Fragment>
       <div className="mt-8 px-24">
@@ -52,6 +56,7 @@ const Brand = () => {
           </div>
         </div>
       </div>
+     
     </Fragment>
   );
 };
