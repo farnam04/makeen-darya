@@ -8,6 +8,7 @@ import Link from "next/link";
 import ImageGallery from "./ImageProduct";
 import Star from "@/assent/Imge/Product/ProductDetail/Star.svg";
 import RoutDetail from "./RoutDetail";
+import Suggestion from "./Suggestion/Suggestion";
 
 const ProductDetail = () => {
   const [counter, setCounter] = useState(0);
@@ -112,6 +113,10 @@ const ProductDetail = () => {
 
         <div className="mt-40">
             <RoutDetail product={product}/>
+        </div>
+
+        <div>
+          <Suggestion/>
         </div>
       </div>
     </Fragment>
