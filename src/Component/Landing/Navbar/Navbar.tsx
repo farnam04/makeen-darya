@@ -44,13 +44,13 @@ const Navbar = () => {
               </button>
             </Link>
 
-            <Link href="/brands">
+            <Link href="/brand">
               <button className="cursor-pointer">
                 <p
-               style={pathName === "/brands" ? { color: "#363636" } : {}}
+               style={pathName === "/brand" ? { color: "#363636" } : {}}
                className={`w-20 font-demiBold text-base whitespace-nowrap 
               ${
-                    pathName === "/brands"
+                    pathName === "/brand"
                       ? " text-[#363636] border-b-2 border-[#1235AA] pb-[10px] pt-2  w-[78px] text-base mt-[1px] leading-7 font-bold duration-300"
                       : "text-[#6B6B6B] w-[63px]"
                   }

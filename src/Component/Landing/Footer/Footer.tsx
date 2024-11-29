@@ -13,8 +13,8 @@ import Goggle from '@/assent/Imge/Product/Goggle.svg'
 const Footer = () => {
   return (
     <Fragment>
-      <div className="px-20 border-b border-b-[#ADADAD] py-10 mt-20 bg-[#FAFAFA]">
-        <div className="flex justify-between">
+      <div className="px-20  pt-10 mt-20 bg-[#FAFAFA]">
+        <div className="flex border-b border-b-[#ADADAD] pb-10 justify-between">
           <div className="flex flex-col gap-10">
             <div className="flex items-center gap-3">
               <Image src={Logo} width={51} height={53} alt="" />
