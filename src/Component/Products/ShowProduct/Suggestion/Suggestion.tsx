@@ -8,9 +8,9 @@ const Suggestion = () => {
   const Data = SuggestionData().Suggestion;
   return (
     <Fragment>
-      <div className="mt-40 px-20">
+      <div className="mt-40 ">
         <Image src={SuggestRout} width={1224} height={24} alt="suggestRout" />
-        <div className="grid grid-cols-4 mr-16 mt-10 gap-9 ">
+        <div className="grid grid-cols-4 mr-16 mt-10 w-[90%] gap-9 ">
           {Data.map((items) => (
             <div
               className="  relative  px-2 rounded-xl  shadow transition-transform duration-300 hover:scale-105 group"

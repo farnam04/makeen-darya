@@ -63,7 +63,7 @@ const ProductDetail = () => {
                 </p>
               </div>
 
-              <div className="flex  items-center">
+              <div className="flex gap-3  items-center">
                 <Image src={Star} width={24} height={24} alt="" />
                 <p className="font-medium text-base text-[#404040]">
                   {product.rate}
