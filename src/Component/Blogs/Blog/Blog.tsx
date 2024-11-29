@@ -7,6 +7,7 @@ import Eye from "@/assent/Imge/Blog/eye.svg";
 import Clock from "@/assent/Imge/Blog/clock.svg";
 import Arrow from "@/assent/Imge/Blog/arrow-left.svg";
 import Paginate from "@/Component/Products/Product/Paginate";
+import BlogSuggestion from "./BlogSuggestion";
 const Blog = () => {
   const Data = BlogsData().Blog;
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -89,6 +90,10 @@ const Blog = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div>
+            <BlogSuggestion/>
           </div>
         </div>
       </div>
