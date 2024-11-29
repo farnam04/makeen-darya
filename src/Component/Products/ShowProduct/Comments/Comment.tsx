@@ -1,63 +1,3 @@
-// import React, { Fragment } from "react";
-// import CommentData from "@/Component/Products/ShowProduct/Comments/CommentData";
-// import Image from "next/image";
-// import LikeImage from "@/assent/Imge/Product/ProductDetail/Like.svg";
-// import DisLikeImage from "@/assent/Imge/Product/ProductDetail/dislike.svg";
-
-// const Comment = () => {
-//   const Data = CommentData().Comment;
-//   return (
-//     <Fragment>
-//       <div className="  items-center">
-//         <div className="flex flex-col gap-7 items-center">
-//           {Data.map((items) => (
-//             <div key={items.id} className="bg-[#FAFAFA] w-[80%] p-4">
-//               <div className="flex justify-between items-center">
-//                 <div className="flex gap-2 items-center">
-//                   <Image src={items.src} width={36} height={36} alt="" />
-//                   <p className="font-medium text-sm text-[#404040]">
-//                     {items.name}
-//                   </p>
-//                 </div>
-//                 <div className="flex gap-2 items-center">
-//                   <p className="font-normal text-sm text-[#494949]">
-//                     {items.date}
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="mt-10 flex justify-between items-center">
-//                 <div>
-//                   <p className="font-medium text-sm text-[#404040]">
-//                     {items.discription}
-//                   </p>
-//                 </div>
-//                 <div className="flex gap-3 items-center">
-//                   <Image
-//                     src={DisLikeImage}
-//                     width={24}
-//                     height={24}
-//                     alt=""
-//                     className="cursor-pointer"
-//                   />
-//                   <Image
-//                     src={LikeImage}
-//                     width={24}
-//                     height={24}
-//                     alt=""
-//                     className="cursor-pointer"
-//                   />
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </Fragment>
-//   );
-// };
-
-// export default Comment;
-
 import React, { Fragment } from "react";
 import CommentData from "@/Component/Products/ShowProduct/Comments/CommentData";
 import Image from "next/image";
@@ -67,7 +7,7 @@ import DisLikeImage from "@/assent/Imge/Product/ProductDetail/dislike.svg";
 const Comment = () => {
   const Data = CommentData().Comment;
 
-  const renderStars = (like) => {
+  const renderStars = (like:any) => {
     const totalStars = 5;
     const filledStars = parseInt(like);
     const emptyStars = totalStars - filledStars;
@@ -80,7 +20,7 @@ const Comment = () => {
             <svg
               key={`filled-${index}`}
               xmlns="http://www.w3.org/2000/svg"
-              fill="#FDB713" // ستاره‌های پر به رنگ طلایی
+              fill="#FDB713"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke=""
@@ -169,5 +109,3 @@ const Comment = () => {
 };
 
 export default Comment;
-
-
