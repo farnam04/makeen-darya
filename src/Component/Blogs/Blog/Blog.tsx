@@ -22,7 +22,7 @@ const Blog = () => {
   };
   return (
     <Fragment>
-      <div className="mt-8 px-24">
+      <div className="mt-8 px-20">
         <div className="breadcrumbs  text-base">
           <ul>
             <li>
@@ -48,52 +48,64 @@ const Blog = () => {
                 className="  relative  px-4   rounded-xl  shadow transition-transform duration-300 hover:scale-105 group"
                 key={items.id}
               >
-                <div className="flex flex-col my-10 gap-10 py-3   bg-[#FAFAFA]">
-                  <div className="flex gap-10 ">
-                    <Image src={items.src} width={352} height={231} alt="" />
-                    <div className="mt-10">
-                      <p className="text-[#363636] text-lg font-normal">
-                        {items.name}
-                      </p>
+                <Link href="/blog/detailblog">
+                  <div className="flex flex-col my-10 gap-10 py-3   bg-[#FAFAFA]">
+                    <div className="flex gap-10 ">
+                      <Image src={items.src} width={352} height={231} alt="" />
+                      <div className="mt-10">
+                        <p className="text-[#363636] text-lg font-normal">
+                          {items.name}
+                        </p>
 
-                      <p className="text-[#565656] w-96 mt-3 text-base font-normal">
-                        {items.discription}
-                      </p>
-                      <div className="flex justify-between mt-8 items-center">
-                        <div className="flex gap-5">
-                          <div className="flex items-center gap-1">
-                            <Image src={Clock} width={20} height={20} alt="" />
-                            <p className="font-medium text-[#909090] text-xs">
-                              {items.time} دقیقه
-                            </p>
+                        <p className="text-[#565656] w-96 mt-3 text-base font-normal">
+                          {items.discription}
+                        </p>
+                        <div className="flex justify-between mt-8 items-center">
+                          <div className="flex gap-5">
+                            <div className="flex items-center gap-1">
+                              <Image
+                                src={Clock}
+                                width={20}
+                                height={20}
+                                alt=""
+                              />
+                              <p className="font-medium text-[#909090] text-xs">
+                                {items.time} دقیقه
+                              </p>
+                            </div>
+
+                            <div className="flex items-center gap-1">
+                              <Image src={Eye} width={20} height={20} alt="" />
+                              <p className="font-medium text-[#909090] text-xs">
+                                {items.seen}{" "}
+                              </p>
+                            </div>
                           </div>
 
-                          <div className="flex items-center gap-1">
-                            <Image src={Eye} width={20} height={20} alt="" />
-                            <p className="font-medium text-[#909090] text-xs">
-                              {items.seen}{" "}
-                            </p>
-                          </div>
+                          <Link href="/blog/detailblog">
+                            <button className="bg-[#1235AA] px-4 py-2 flex gap-4 items-center">
+                              <p className="font-medium text-sm text-[#FAFAFA]">
+                                مطالعه بیشتر
+                              </p>
+                              <Image
+                                src={Arrow}
+                                width={20}
+                                height={20}
+                                alt=""
+                              />
+                            </button>
+                          </Link>
                         </div>
-
-                        <Link href="/">
-                          <button className="bg-[#1235AA] px-4 py-2 flex gap-4 items-center">
-                            <p className="font-medium text-sm text-[#FAFAFA]">
-                              مطالعه بیشتر
-                            </p>
-                            <Image src={Arrow} width={20} height={20} alt="" />
-                          </button>
-                        </Link>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
 
           <div>
-            <BlogSuggestion/>
+            <BlogSuggestion />
           </div>
         </div>
       </div>

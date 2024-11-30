@@ -8,7 +8,7 @@ const BlogSuggestion = () => {
   const Data = BlogSuggestionData().Blog;
   return (
     <Fragment>
-      <div className="w-[394px] h-[495px] bg-[#FDFDFD] rounded-lg py-6 px-4">
+      <div className=" sticky top-6 w-[394px]  h-[495px] bg-[#FDFDFD] rounded-lg py-6 px-4">
         <p className="text-base text-[#363636] font-medium">
           پیشنهاد خلیج کالا به شما
         </p>
@@ -17,7 +17,7 @@ const BlogSuggestion = () => {
             <Link
             href="/"
               key={items.id}
-              className="flex flex-col  mb-10 border-b border-b-[#D9D9D9]"
+              className="flex flex-col  mb-16 border-b border-b-[#D9D9D9]"
             >
 
               <div className="flex  mb-4 gap-9">
@@ -59,3 +59,6 @@ const BlogSuggestion = () => {
 };
 
 export default BlogSuggestion;
+
+
+
