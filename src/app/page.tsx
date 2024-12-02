@@ -1,5 +1,6 @@
 import Branners from "@/Component/Landing/Banners/Banners/Branners";
 import CatigoryProduct from "@/Component/Landing/CatigoryProduct/CatigoryProduct";
+import Features from "@/Component/Landing/Features/Features";
 import Footer from "@/Component/Landing/Footer/Footer";
 import Header from "@/Component/Landing/Header/Header";
 import Hero from "@/Component/Landing/Hero/Hero";
@@ -16,6 +17,7 @@ const page = () => {
       <CatigoryProduct />
       <Suggestion />
       <Branners/>
+      <Features/>
       <Footer />
     </Fragment>
   );

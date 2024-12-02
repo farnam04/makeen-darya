@@ -7,7 +7,7 @@ import Image from "next/image";
 const Branners = () => {
   return (
     <Fragment>
-      <div className="flex mt-40 pl-24 relative justify-between items-center">
+      <div className="flex mt-40 pl-24 relative  items-center">
         <div
           className=" w-[100%] 2xl:w-[99%] pb-60   py-10   "
           style={{
