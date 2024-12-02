@@ -4,7 +4,7 @@ const SuggestionsInputs = () => {
   return (
     <Fragment>
       <div className="w-[416px] rounded-lg  p-6 bg-[#ffff]">
-        <p className="font-medium text-base text-[#363636]">
+        <p className="font-medium text-base text-[#1D1D1D]">
           انتقاد یا پیشنهاد خودتان را برای ما ارسال کنید.
         </p>
         <div className="flex gap-8 mt-7 items-center flex-col">
