@@ -4,8 +4,9 @@ import ProductHeder from "@/assent/Imge/Landing/ProductCategorysvg.svg";
 import Line from "@/assent/Imge/Landing/Line.svg";
 import ArrowLeft from "@/assent/Imge/Landing/arrow-left.svg";
 import ArrowRight from "@/assent/Imge/Landing/arrowRight.svg";
-
+import ArrowIcon from "@/assent/Imge/Landing/arrowLeft .svg";
 import DataProduct from "./DataProduct";
+import Link from "next/link";
 const CatigoryProduct = () => {
   const Data = DataProduct().Product;
   return (
@@ -35,21 +36,30 @@ const CatigoryProduct = () => {
 
         <div className="flex justify-between items-center">
           {Data.map((items) => (
-            <div key={items.id} >
+            <div key={items.id}>
               <div className="absolute bottom-28">
                 <Image src={items.src} width={100} height={100} alt="" />
               </div>
 
               <div className="bg-[#F1F1F1] mt-20 hover:bg-[#DEE6FFC7] duration-300 w-[260px] px-5 h-[155px] rounded-lg">
-                 <div className="flex justify-between pt-20 items-center">
-                   <p className="font-medium text-xl text-[#363636]">
+                <div className="flex justify-between pt-20 items-center">
+                  <p className="font-medium text-xl text-[#363636]">
                     {items.name}
-                   </p>
+                  </p>
 
-                   <p className="font-medium text-sm text-[#565656]">
-                    {items.Number}   کالا
-                   </p>
-                 </div>
+                  <p className="font-medium text-sm text-[#565656]">
+                    {items.Number} کالا
+                  </p>
+                </div>
+
+                <Link href="/">
+                  <div className="flex gap-3 mt-3 items-center">
+                    <p className="font-medium text-sm text-[#565656]">
+                      مشاهده محصولات
+                    </p>
+                    <Image src={ArrowIcon} width={20} height={20} alt="" />
+                  </div>
+                </Link>
               </div>
             </div>
           ))}
