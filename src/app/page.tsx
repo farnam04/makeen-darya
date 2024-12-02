@@ -1,3 +1,4 @@
+import CatigoryProduct from "@/Component/Landing/CatigoryProduct/CatigoryProduct";
 import Footer from "@/Component/Landing/Footer/Footer";
 import Header from "@/Component/Landing/Header/Header";
 import Hero from "@/Component/Landing/Hero/Hero";
@@ -9,10 +10,12 @@ const page = () => {
     <Fragment>
       <Header />
       <Navbar />
-
       <Hero />
-
-      <Footer />
+      <CatigoryProduct />
+      {/* <div className="mt-[66%]"> */}
+        <Footer />
+      {/* </div> */}
+     
     </Fragment>
   );
 };
