@@ -3,10 +3,12 @@ import Logo from '@/assent/Imge/Landing/Logo.svg'
 import Image from 'next/image'
 import loginButtonIcon from '@/assent/Imge/Landing/user.svg'
 import ShoppingImage from '@/assent/Imge/Landing/shopping-cart.svg'
+import Link from 'next/link'
 const Header = () => {
   return (
     <Fragment>
         <div className='flex bg-white justify-between px-20 py-4 pb-2 '>
+          <Link href="/">
            <div className='flex items-center gap-3'>
             <Image
             src={Logo}
@@ -18,6 +20,7 @@ const Header = () => {
                 مکین استور
             </p>
            </div>
+           </Link>
            <div>
             <div className='flex items-center gap-5'>
             <div className="hidden md:block cursor-pointer ">
