@@ -3,6 +3,7 @@ import Footer from "@/Component/Landing/Footer/Footer";
 import Header from "@/Component/Landing/Header/Header";
 import Hero from "@/Component/Landing/Hero/Hero";
 import Navbar from "@/Component/Landing/Navbar/Navbar";
+import Suggestion from "@/Component/Landing/Suggestion/Suggestion";
 import React, { Fragment } from "react";
 
 const page = () => {
@@ -12,10 +13,8 @@ const page = () => {
       <Navbar />
       <Hero />
       <CatigoryProduct />
-      {/* <div className="mt-[66%]"> */}
-        <Footer />
-      {/* </div> */}
-     
+      <Suggestion />
+      <Footer />
     </Fragment>
   );
 };
