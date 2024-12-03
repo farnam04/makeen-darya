@@ -1,4 +1,5 @@
 import Branners from "@/Component/Landing/Banners/Banners/Branners";
+import MainBanners from "@/Component/Landing/Banners/MainBanner/MainBanners";
 import CatigoryProduct from "@/Component/Landing/CatigoryProduct/CatigoryProduct";
 import Features from "@/Component/Landing/Features/Features";
 import Footer from "@/Component/Landing/Footer/Footer";
@@ -20,6 +21,7 @@ const page = () => {
       <Branners/>
       <Features/>
       <Populer/>
+      <MainBanners/>
       <Footer />
     </Fragment>
   );
