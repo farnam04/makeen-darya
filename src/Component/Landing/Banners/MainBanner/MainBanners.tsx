@@ -7,7 +7,7 @@ const MainBanners = () => {
   return (
     <Fragment>
       <div
-        className=" w-[92%]  2xl:w-[99%] pb-60   py-10   "
+        className=" w-[92%]  2xl:w-[99%] pb-20   py-10   "
         style={{
           backgroundImage: `url(${Background.src})`,
           backgroundRepeat: "no-repeat",
