@@ -6,7 +6,7 @@ import FormLogin from '@/component/AdminDashboard/LoginDashboard/FormLogin'
 export default function page() {
     return (
         <Fragment >
-            <div className='flex w-full h-screen items-center justify-between ' >
+            <div className='flex flex-row-reverse w-full h-screen items-center justify-between ' >
                 <div className='w-[527px] h-full flex ' >
                     <Image src={SidebarImage} alt='' className=' h-screen w-full  ' />
                 </div>
