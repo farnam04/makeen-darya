@@ -3,6 +3,7 @@ import MainBanners from "@/Component/Landing/Banners/MainBanner/MainBanners";
 import Blogs from "@/Component/Landing/Blogs/Blogs";
 import Brands from "@/Component/Landing/Brands/Brands";
 import CatigoryProduct from "@/Component/Landing/CatigoryProduct/CatigoryProduct";
+import Discounts from "@/Component/Landing/Discounts/Discounts";
 import Features from "@/Component/Landing/Features/Features";
 import Footer from "@/Component/Landing/Footer/Footer";
 import Header from "@/Component/Landing/Header/Header";
@@ -21,6 +22,7 @@ const page = () => {
       <CatigoryProduct />
       <Suggestion />
       <Branners/>
+      <Discounts/>
       <Features/>
       <Populer/>
       <MainBanners/>
