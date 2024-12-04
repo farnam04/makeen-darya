@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+"use client"
+import React, { Fragment, useRef } from "react";
 import Image from "next/image";
 import PopulerImage from "@/assent/Imge/Landing/PopulerImage.svg";
 import Line from "@/assent/Imge/Landing/Line.svg";
@@ -8,7 +9,28 @@ import BasketImage from "@/assent/Imge/Product/‌basket.svg";
 import Link from "next/link";
 import PopuloerData from "./PopuloerData";
 const Populer = () => {
-    const Data = PopuloerData().Populoer
+  const Data = PopuloerData().Populoer;
+
+  const scrollContainerRef = useRef(null);
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 300,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -300,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <Fragment>
       <div className="px-20 relative my-20">
@@ -23,6 +45,7 @@ const Populer = () => {
             height={40}
             alt=""
             className="cursor-pointer"
+            onClick={scrollRight}
           />
 
           <Image
@@ -31,14 +54,18 @@ const Populer = () => {
             height={40}
             alt=""
             className="cursor-pointer"
+            onClick={scrollLeft}
           />
         </div>
 
-        <div className="flex mr-16 mt-10 w-[90%] gap-9 ">
-          {Data.map((items) => (
+        <div
+          ref={scrollContainerRef}
+          className="flex  mt-10 overflow-x-auto scrollbar-hide gap-9"
+        >
+         {Data.map((items) => (
             <div
-              className="  relative  px-2 rounded-xl  shadow transition-transform duration-300 hover:scale-105 group"
               key={items.id}
+              className="relative px-2 rounded-xl shadow transition-transform duration-300 hover:scale-105 group flex-shrink-0"
             >
               <Link href="/product/productdetail">
                 <div className="flex flex-col gap-4 px-4">
