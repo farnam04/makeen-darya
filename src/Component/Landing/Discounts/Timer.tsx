@@ -45,20 +45,20 @@ const Timer: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center gap-4 items-center">
      
-      <div className="text-6xl font-bold text-black bg-gray-100 p-4 rounded-lg">
+      <div className="text-xl font-normal text-[#363636] bg-[#F6F6F6] p-4 rounded-lg">
         {time.seconds.toString().padStart(2, "0")}
       </div>
-      <div className="text-6xl font-bold text-black">:</div>
+      <div className="text-xl  font-normal bg-[#F6F6F6] p-2 rounded-lg text-black">:</div>
     
-      <div className="text-6xl font-bold text-black bg-gray-100 p-4 rounded-lg">
+      <div className="text-xl font-normal text-[#363636] bg-[#F6F6F6] p-4 rounded-lg">
         {time.minutes.toString().padStart(2, "0")}
       </div>
-      <div className="text-6xl font-bold text-black">:</div>
+      <div className="text-xl  font-normal bg-[#F6F6F6] p-2 rounded-lg text-black">:</div>
      
 
-      <div className="text-6xl font-bold text-black bg-gray-100 p-4 rounded-lg">
+      <div className="text-xl font-normal text-[#363636] bg-[#F6F6F6] p-4 rounded-lg">
         {time.hours.toString().padStart(2, "0")}
       </div>
     </div>
