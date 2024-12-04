@@ -1,4 +1,6 @@
-import React, { Fragment } from "react";
+"use client";
+
+import React, { Fragment, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SuggestRout from "@/assent/Imge/Product/ProductDetail/SuggestionRout.svg";
@@ -6,38 +8,64 @@ import BasketImage from "@/assent/Imge/Product/‌basket.svg";
 import SuggestionData from "./SuggestionData";
 import ArrowLeft from "@/assent/Imge/Landing/arrow-left.svg";
 import ArrowRight from "@/assent/Imge/Landing/arrowRight.svg";
+
 const Suggestion = () => {
   const Data = SuggestionData().Suggestion;
+
+  const scrollContainerRef = useRef(null);
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 300,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -300,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <Fragment>
-      <div className="mt-40 px-20 ">
-        <div className="flex gap-10">
+      <div className="mt-40 px-20">
+        <div className="flex justify-between items-center gap-10">
+          <Image src={SuggestRout} width={1107} height={58} alt="suggestRout" />
+          <div className="flex items-center gap-6">
+            <Image
+              src={ArrowRight}
+              width={40}
+              height={40}
+              alt=""
+              className="cursor-pointer"
+              onClick={scrollRight}
+            />
 
-        
-        <Image src={SuggestRout} width={1107} height={58} alt="suggestRout" />
-        <div className="flex items-center gap-10">
-          <Image
-            src={ArrowRight}
-            width={40}
-            height={40}
-            alt=""
-            className="cursor-pointer"
-          />
+            <Image
+              src={ArrowLeft}
+              width={40}
+              height={40}
+              alt=""
+              className="cursor-pointer"
+              onClick={scrollLeft}
+            />
+          </div>
+        </div>
 
-          <Image
-            src={ArrowLeft}
-            width={40}
-            height={40}
-            alt=""
-            className="cursor-pointer"
-          />
-        </div>
-        </div>
-        <div className="flex mr-16 mt-10 w-[90%] gap-9 ">
+        <div
+          ref={scrollContainerRef}
+          className="flex  mt-10 overflow-x-auto scrollbar-hide gap-9"
+        >
           {Data.map((items) => (
             <div
-              className="  relative  px-2 rounded-xl  shadow transition-transform duration-300 hover:scale-105 group"
               key={items.id}
+              className="relative px-2 rounded-xl shadow transition-transform duration-300 hover:scale-105 group flex-shrink-0"
             >
               <Link href="/product/productdetail">
                 <div className="flex flex-col gap-4 px-4">
