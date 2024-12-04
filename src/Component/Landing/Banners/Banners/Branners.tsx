@@ -19,7 +19,7 @@ const Branners = () => {
             <p className="font-semibold text-2xl text-[#F6F6F6]">
               لـوازم غــواصــی
             </p>
-            <button className="flex gap-5 items-center bg-[#F6F6F6] px-4 py-2 rounded-md">
+            <button className="flex gap-5 text-[#363636] items-center bg-[#F6F6F6] px-4 py-2 rounded-md">
               مشاهده بیشتر
               <Image src={FlashImage} width={24} height={24} alt="" />
             </button>
@@ -37,7 +37,7 @@ const Branners = () => {
             <p className="font-semibold  text-2xl text-[#F6F6F6]">
               لـوازم مـاهـیگـیری
             </p>
-            <button className="flex gap-5 items-center bg-[#F6F6F6] px-4 py-2 rounded-md">
+            <button className="flex text-[#363636] gap-5 items-center bg-[#F6F6F6] px-4 py-2 rounded-md">
               مشاهده بیشتر
               <Image src={FlashImage} width={24} height={24} alt="" />
             </button>

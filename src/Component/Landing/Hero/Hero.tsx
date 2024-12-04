@@ -14,10 +14,10 @@ const Hero = () => {
         >
           <div className="mt-60  px-20 flex justify-start ">
             <div>
-              <h1 className="font-medium text-[26px] leading-10">
+              <h1 className="font-medium text-[#363636] text-[26px] leading-10">
                 تجهیزات دریایی با کیفیت؛ هر آنچه برای سفرهای آبی نیاز دارید!
               </h1>
-              <p className="w-[65%] mt-8 font-medium text-base leading-9">
+              <p className="w-[65%] text-[#363636] mt-8 font-medium text-base leading-9">
                 فروشگاه ما مجموعه‌ای گسترده از لوازم دریایی را برای شما فراهم
                 کرده است. از تجهیزات ایمنی دریایی تا وسایل حمل و نقل و نگهداری،
                 هر چیزی که نیاز دارید، اینجا پیدا می‌کنید.
