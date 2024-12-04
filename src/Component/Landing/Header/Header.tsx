@@ -28,7 +28,7 @@ const Header = () => {
 
               </div>
             <div className="hidden md:block ">
-            <button className="flex gap-2 bg-[#194BF0] rounded-xl py-2 px-4 whitespace-nowrap">
+            <button className="flex gap-2 bg-[#194BF0] rounded-xl py-2 pr-3 whitespace-nowrap">
               <Image src={loginButtonIcon} width={20} height={20} alt="" />
               <p className="font-medium text-[#FFFFFF] text-sm pl-4">
                 ورود / ثبت نام

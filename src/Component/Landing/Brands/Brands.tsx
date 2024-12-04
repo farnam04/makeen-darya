@@ -11,7 +11,7 @@ const Brands = () => {
         <div className="py-4">
           <Image src={BrandsRout} width={1440} height={58} alt="" />
         </div>
-           <div className='flex px-20 py-10 justify-between items-center '>
+           <div className='flex px-20 py-5 justify-between items-center '>
            {Data.map((items)=>(
             <Link key={items.id} href="/">
                <Image
