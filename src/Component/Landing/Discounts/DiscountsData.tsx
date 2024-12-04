@@ -10,6 +10,7 @@ const DiscountsData = () => {
             brand: "VIVID",
             model: "Light Riding",
             price: "9,449,000 ",
+            Disprice: "9,449,000 ",
           },
     
           {
@@ -19,6 +20,7 @@ const DiscountsData = () => {
             brand: "VIVID",
             model: "Light Riding",
             price: "9,449,000 ",
+            Disprice: "9,449,000 ",
           },
     
           {
@@ -28,6 +30,7 @@ const DiscountsData = () => {
             brand: "VIVID",
             model: "Light Riding",
             price: "9,449,000 ",
+            Disprice: "9,449,000 ",
           },
     ]
   }
