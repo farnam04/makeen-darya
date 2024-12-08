@@ -12,7 +12,7 @@ const NavbarDashboard = () => {
   const pathName = usePathname();
   return (
     <Fragment>
-      <div className="px-8 py-4 flex flex-col gap-20 rounded-2xl bg-[#FAFAFA] w-[273px] h-[775px]">
+      <div className="px-8 py-4 flex flex-col gap-20 rounded-2xl bg-[#ffff] w-[273px] h-[775px]">
         <div className="flex gap-5 items-center ">
           <div className="bg-[#F6F6F6] border border-[#EBEBEB] rounded-lg p-4 flex justify-center">
             <Image src={UserData.src} width={40} height={40} alt="" />
@@ -32,9 +32,9 @@ const NavbarDashboard = () => {
           {Navbar.map((items) => (
             <div
               key={items.id}
-              className={` flex gap-7 pr-4 items-center w-52 h-[47px] rounded-lg hover:border-r-2 hover:border-r-[#1744DA] cursor-pointer hover:bg-blue-100 ${
+              className={` flex gap-7 pr-4 items-center w-52 h-[47px] rounded-lg hover:border-r-[6px] hover:border-r-[#1744DA] cursor-pointer hover:bg-blue-100 ${
                 pathName === items.Link
-                  ? "bg-blue-100 border-r-2 border-r-[#1744DA]"
+                  ? "bg-blue-100 border-r-[6px] border-r-[#1744DA]"
                   : ""
               }`}
             >
