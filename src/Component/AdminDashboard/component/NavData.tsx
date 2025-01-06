@@ -41,12 +41,6 @@ export const NavData = [
     onpathimg: "",
   },
   {
-    name: " دسته بندی ",
-    href: "/admindashboard/orders",
-    img: Category,
-    onpathimg: "",
-  },
-  {
     name: " برند ها ",
     href: "/admindashboard/orders",
     img: Brands,
