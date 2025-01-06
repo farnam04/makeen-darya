@@ -1,5 +1,6 @@
 import AdmindashboardNavbar from "@/component/AdminDashboard/component/AdmindashboardNavbar";
 import AdmindashboardTopSlidebar from "@/component/AdminDashboard/component/AdmindashboardTopSlidebar";
+import Mainpage from "@/component/AdminDashboard/Dashboard/Mainpage";
 import React, { Fragment } from "react";
 
 export default function page() {
@@ -10,9 +11,12 @@ export default function page() {
           <div className="w-full h-[70px]">
             <AdmindashboardTopSlidebar />
           </div>
-          <div className="w-full h-[930px] bg-slate-500 flex mt-[10px] ">
+          <div className="w-full h-[930px]   flex justify-between mt-[10px] ">
             <div className=" h-full w-[180px]">
-              <AdmindashboardNavbar/>
+              <AdmindashboardNavbar />
+            </div>
+            <div className=" h-full w-[1250px] bg-white ">
+              <Mainpage />
             </div>
           </div>
         </div>
