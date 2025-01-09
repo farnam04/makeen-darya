@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
+
+import { UserBarData,} from "./UserbarData";
+import { Mapper } from "./Mapper";
 
 export default function Usersbar() {
-  return (
-    <div className=' flex flex-col w-full h-[700px] bg-slate-100 mt-[20px]' >
-          <div className=' text-white  flex items-center w-full h-[60px] bg-[#1235AA] rounded-xl pr-[11px] ' >
-            <p className='text-[16px]' >ردیف</p>
-          </div>
+
+  
+      return (
+    <div className=" flex flex-col w-full h-[700px]  mt-[20px]">
+      <div className=" text-white text-[16px]  flex items-center w-full h-[60px] bg-[#1235AA] rounded-xl pr-[15px] ">
+        <p>ردیف</p>
+        <p className="mr-[80px]"> نام و نام خانوادگی </p>
+        <p className="mr-[80px]">شماره تلفن</p>
+        <p className="mr-[80px]">تعداد سفارشات</p>
+        <p className="mr-[80px]">مقام</p>
+        <p className="mr-[80px]">اخرین فعالیت</p>
+        <p className="mr-[280px]">عملیات</p>
+      </div>
+      {Mapper}
     </div>
-  )
+  );
 }

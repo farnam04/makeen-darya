@@ -17,8 +17,8 @@ export default function page() {
               <AdmindashboardNavbar />
             </div>
             <div className="flex flex-col h-full w-[1250px] bg-white p-[16px] ">
-<ToplineUserdash/>
-<Usersbar/>
+              <ToplineUserdash />
+              <Usersbar />
             </div>
           </div>
         </div>
