@@ -30,7 +30,7 @@ export const NavData = [
   },
   {
     name: "آمار فروش",
-    href: "/admindashboard/orders",
+    href: "/admindashboard/static",
     img: Static,
     onpathimg: "",
   },
