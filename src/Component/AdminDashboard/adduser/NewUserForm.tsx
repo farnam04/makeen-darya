@@ -31,7 +31,7 @@ export default function NewUserForm() {
         <div className="w-1/2 h-full flex flex-col justify-between ">
           <p> مقام :</p>
           <select className="h-[56px] w-[506px] border-[#D9D9D9] border-[1px] outline-none rounded-md pr-[5px] ">
-            <option value="">هیچکدام</option>
+            <option value="none">هیچکدام</option>
             <option value="MVP">ادمین کل سایت</option>
             <option value="writer">نویسنده</option>
             <option value="user">کاربر</option>
