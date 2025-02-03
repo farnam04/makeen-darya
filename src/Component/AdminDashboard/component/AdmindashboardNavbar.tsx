@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NavData } from "./NavData";
 
-export default function AdmindashboardNavbar() {
+export default function   AdmindashboardNavbar() {
   const pathname = usePathname();
 
   return (

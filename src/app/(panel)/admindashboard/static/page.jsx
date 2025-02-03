@@ -1,5 +1,7 @@
 import AdmindashboardNavbar from "@/component/AdminDashboard/component/AdmindashboardNavbar";
 import AdmindashboardTopSlidebar from "@/Component/AdminDashboard/component/AdmindashboardTopSlidebar";
+import MainPage from "@/Component/AdminDashboard/Static/MainPage";
+import StaticTopBar from "@/Component/AdminDashboard/Static/StaticTopBar";
 import React, { Fragment } from "react";
 
 export default function page() {
@@ -15,7 +17,8 @@ export default function page() {
               <AdmindashboardNavbar />
             </div>
             <div className=" h-full w-[1250px] bg-white p-[16px] ">
-
+              <StaticTopBar />
+              <MainPage/>
             </div>
           </div>
         </div>
